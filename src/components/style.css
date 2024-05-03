@@ -1,0 +1,17 @@
+.card {
+  background: #0063F5;
+  border-radius: 12px;
+  padding:20px;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.card p {
+  word-break: break-all;
+}
+
+.card strong {
+  font-size: 13px;
+}
