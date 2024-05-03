@@ -11,12 +11,9 @@ function Home() {
       if ((window as any).ethereum) {
         const web3Instance = new Web3((window as any).ethereum);
         await (window as any).ethereum.enable();
-        console.log("web3Instance aa:",web3Instance);
         setWeb3(web3Instance);
       } else if ((window as any).web3) {
         const web3Instance = new Web3((window as any).web3.currentProvider);
-        console.log("web3Instance:",web3Instance);
-        
         setWeb3(web3Instance);
       } else {
         console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
